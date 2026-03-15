@@ -23,8 +23,8 @@ settings_loader = ["dep:ron", "dep:serde", "kira/serde"]
 android_shared_stdcxx = ["kira/android_shared_stdcxx"]
 
 [dependencies]
-bevy = { version = "0.18.0", default-features = false, features = ["std", "bevy_asset", "bevy_log"] }
-bevy_math = { version = "0.18.0" }
+bevy = { rev = "1b3b01e94003cbcf652f842057ebab547b400b0e", git = "https://github.com/bevyengine/bevy", default-features = false, features = ["std", "bevy_asset", "bevy_log"] }
+bevy_math = { rev = "1b3b01e94003cbcf652f842057ebab547b400b0e", git = "https://github.com/bevyengine/bevy" }
 anyhow = "1.0"
 uuid = { version = "1", features = ["fast-rng"] }
 kira = { version = "0.10.8", default-features = false, features = ["cpal"] }
@@ -36,7 +36,8 @@ mint = "0.5.9"
 glam = "0.25.0"
 
 [dev-dependencies.bevy]
-version = "0.18.0"
+rev = "1b3b01e94003cbcf652f842057ebab547b400b0e"
+git = "https://github.com/bevyengine/bevy"
 default-features = false
 # default features minus "bevy_audio", "android_shared_stdcxx", and "vorbis"
 features = [
