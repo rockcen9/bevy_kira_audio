@@ -28,6 +28,7 @@ bevy_math = { rev = "1b3b01e94003cbcf652f842057ebab547b400b0e", git = "https://g
 anyhow = "1.0"
 uuid = { version = "1", features = ["fast-rng"] }
 kira = { version = "0.10.8", default-features = false, features = ["cpal"] }
+cpal = "0.15.1"
 ron = { version = "0.8", optional = true }
 serde = { version = "1.0", features = ["derive"], optional = true }
 parking_lot = "0.12"

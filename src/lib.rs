@@ -47,6 +47,7 @@ pub use audio::{
     TweenCommand,
 };
 pub use backend_settings::AudioSettings;
+pub use cpal::BufferSize;
 use bevy::app::{PostUpdate, PreUpdate};
 use bevy::asset::AssetApp;
 pub use channel::AudioControl;
